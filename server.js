@@ -1,9 +1,11 @@
 import express from "express";
-import dotenv from "dotenv";
 import cors from "cors";
+import dotenv from "dotenv";
 
+// Loading environment variables
 dotenv.config();
 
+// Let's get the party started
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -11,11 +13,12 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
-// Root route
+// Routes
 app.get("/", (req, res) => {
   res.send(`Dictionary API is running...`);
 });
 
+// It listens...
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });

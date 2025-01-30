@@ -4,7 +4,7 @@
   "description": "This repository contains the backend service for the Dictionary Application. It provides a RESTful API for searching word definitions, pronunciations, etymologies, and search history management.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "keywords": [],
   "type": "module",
