@@ -7,4 +7,8 @@ router.get("/:word", (req, res) => {
   res.json({ message: `Looking up details for: ${word}` });
 });
 
+router.get("/", (req, res) => {
+  res.json({ message: "Words endpoint." });
+});
+
 export default router;
